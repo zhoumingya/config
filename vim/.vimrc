@@ -1,5 +1,37 @@
 source ~/.vimrc.ext
 
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+"
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'bundle/Vundle.vim'
+
+" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+" Plugin 'vim-scripts/indentpython.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
 "set makeprg=gmake
 syntax on
 map <F2> <C-w>
@@ -96,7 +128,7 @@ set formatoptions=tcro  "switch auto * when I type enter in the mutiline
 set autoread
 "common block
 set shiftwidth=4 "number of spaces used for each step of (auto)indent
-"set expandtab
+set expandtab
 set tabstop=4
 set softtabstop=4
 set noexpandtab
