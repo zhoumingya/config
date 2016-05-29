@@ -1,5 +1,6 @@
 source ~/.vimrc.ext
 
+" Vundle
 set nocompatible              " required
 filetype off                  " required
 
@@ -16,6 +17,9 @@ Plugin 'gmarik/Vundle.vim'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'vim-scripts/indentpython.vim'
 Bundle 'Valloric/YouCompleteMe'
+Plugin 'Lokaltog/vim-powerline'
+" A tree explorer plugin for vim. 
+Plugin 'scrooloose/nerdtree'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -31,6 +35,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+" powerline
+set t_Co=256        " 终端颜色
+" set laststatus=2    " 显示状态栏
+let g:Powerline_symbols = 'compatible'  
+
+" nerdtree 
+map <C-n> :NERDTreeToggle<CR>
 
 "set makeprg=gmake
 syntax on
