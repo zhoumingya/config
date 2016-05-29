@@ -20,6 +20,7 @@ Bundle 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/vim-powerline'
 " A tree explorer plugin for vim. 
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
