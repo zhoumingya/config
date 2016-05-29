@@ -1,6 +1,6 @@
 " Vim profile.
 " Author: Peter Odding <peter@peterodding.com>
-" Last Change: July 8, 2015
+" Last Change: May 29, 2016
 " URL: http://peterodding.com/code/vim/profile/vimrc
 
 " Enable syntax highlighting.
@@ -275,6 +275,7 @@ augroup filetypedetect
   au BufNewFile,BufRead ~/.ctags setf sh
   au BufNewFile,BufRead *.h setf cpp
   au StdinReadPost,BufRead * if getline(1) =~ 'sending incremental file list' | setf rsync | endif
+  au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 augroup END
 
 " Allow reading of PDF and Word documents. {{{2
