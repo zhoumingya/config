@@ -21,6 +21,9 @@ Plugin 'Lokaltog/vim-powerline'
 " A tree explorer plugin for vim. 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'crusoexia/vim-monokai'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,6 +47,10 @@ let g:Powerline_symbols = 'compatible'
 
 " nerdtree 
 map <C-n> :NERDTreeToggle<CR>
+
+" color theme
+colorscheme monokai
+
 
 "set makeprg=gmake
 syntax on
